@@ -1,12 +1,3 @@
-/**
- * |-| [- |_ | /\ ( ~|~ `/ |_
- *
- * Heliactyl 14.11.0 ― Cascade Ridge
- *
- * This is for creating, deleting and editing servers on the user side.
- * @module servers
-*/
-
 const settings = require("../settings.json");
 const fetch = require("node-fetch");
 const indexjs = require("../app.js");
