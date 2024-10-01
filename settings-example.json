@@ -1,8 +1,8 @@
 {
-  "name": "Nexa",
+  "name": "Heliactyl",
   "pterodactyl": {
-    "domain": "https://cp.lunarhosting.site",
-    "key": "ptla_rFAxhmQN1NeP6himOliPZcx89fq6kwcN5wYjrwAT9Od"
+    "domain": "https://panel.example.com",
+    "key": "Your Pterodactyl API key with all permissions"
   },
   "timezone": "Europe/London",
   "version": "14.11.1",
@@ -69,9 +69,9 @@
       },
       "oauth2": {
         "_comment": "Go to https://discord.dev/ and create an application to set up OAuth2. This is required for Heliactyl to work. You must also set the redirect URL to the link below.",
-        "id": "1288879572372164730",
-        "secret": "V6a_HlYmiAbK2BguYKrOKROBLXcbZBzH",
-        "link": "http://127.0.0.1:3000",
+        "id": "Your client ID",
+        "secret": "Your client secret",
+        "link": "http://localhost:3000",
         "callbackpath": "/callback",
         "prompt": true,
         "ip": {
