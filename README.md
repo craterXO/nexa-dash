@@ -1,35 +1,16 @@
-# Heliactyl
+# NexaDash
 
-![GitHub commit](https://img.shields.io/github/last-commit/heliactyloss/heliactyl) ![GitHub Release](https://img.shields.io/github/v/release/heliactyloss/heliactyl)
+![GitHub commit](https://img.shields.io/github/last-commit/craterXO/nexa-dash) ![GitHub Release](https://img.shields.io/github/v/release/craterXO/nexa-dash)
 
-> [!CAUTION]  
-> ~~**⚠️ Heliactyl reaches permanent end-of-life on September 1st, 2024 ⚠️**~~
->
-> ~~Security releases for Heliactyl 10, 11, 13 ended on July 1st, 2024, and security releases for Heliactyl 12, 14, 18 will end on September 1st, 2024~~
->
-> ~~A while ago, we formed an agreement with all maintainers and contributors (excluding Ghostload, we have not contacted him yet) of Heliactyl to end development and support of it by 2025 (as by then, stable [Skyport Panel](https://skyport.dev) releases would be available) however this has been shortened to the start of September~~
-> 
-> ~~SRYDEN and/or me will not update Heliactyl with any future releases past this date, all users of it are highly recommended to move to something else~~
-> 
-> ~~**Dashboards such as legacy Dashactyl, HolaClient, NorthClient are Heliactyl-based and are not safe to use, and will not include any recent security patches - you are putting your servers and data at risk by using these**~~
-> 
-> ~~If the file structure of the dashboard you are looking at has folders named `themes`, `assets`, `misc`, `stuff` or anything similar, it has a high chance of being based on Heliactyl and should not be used~~
-> 
-> ~~We have delayed this for a long time despite the vulnerabilities, poor code quality and ancient modules in Heliactyl due to the amount of people still using it but this will end on September 1st ~~
->
-> ~~**We have built our own panel to replace Pterodactyl and recommend you at least try it out: [Skyport Panel](https://skyport.dev)**~~
-> 
-> The Heliactyl Team has built a brand new dashboard, Graphene. Learn more [by clicking here](https://github.com/graphenepowered/), launching Oct 2024.
-
-Heliactyl was a high-performance client area for the Pterodactyl Panel. It allows your users to create, edit and delete servers, and also earn coins which can be used to upgrade their servers.
+NexaDash was a high-performance client area for the Pterodactyl Panel. It allows your users to create, edit and delete servers, and also earn coins which can be used to upgrade their servers.
 
 ## Get started
 
 You can get started straight away by following these steps:
 
-1. Clone the repo: Run `git clone https://github.com/heliactyloss/heliactyl` on your machine
+1. Clone the repo: Run `git clone https://github.com/craterXO/nexa-dash` on your machine
 2. Enter the directory and configure the `settings.json` file - most are optional except the Pterodactyl and OAuth2 settings which **must** be configured
-3. Check everything out and make sure you've configured Heliactyl correctly
+3. Check everything out and make sure you've configured NexaDash correctly
 4. Create SSL certificates for your target domain and set up the NGINX reverse proxy
 
 ## NGINX Reverse Proxy
@@ -74,13 +55,13 @@ server {
 
 These commands are available:
 ```
-npm run start - starts Heliactyl via nodemon
+npm run start - starts NexaDash via nodemon
 npm run build - builds TailwindCSS, required for making changes to the UI
 ```
 
-## Heliactyl API v2
+## NexaDash API v2
 
-In v14, we've introduced the next generation of Heliactyl's API. You can see the documentation below:
+In v14, we've introduced the next generation of NexaDash's API. You can see the documentation below:
 
 ### /api/v2/userinfo
 
