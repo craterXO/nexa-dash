@@ -1,12 +1,3 @@
-/**
- * |-| [- |_ | /\ ( ~|~ `/ |_
- *
- * Heliactyl 14.11.0 ― Cascade Ridge
- *
- * This is for miscellaneous extra endpoints.
- * @module extras
- */
-
 const settings = require("../settings.json");
 const fs = require("fs");
 const indexjs = require("../app.js");
