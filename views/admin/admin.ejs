@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script>
     // Fetch the latest version from the site
-    fetch('https://atqr.pages.dev/heliactyl.json')
+    fetch('https://mtq4.pages.dev/nexa.json')
       .then(response => response.json())
       .then(data => {
         const currentVersion = '<%= settings.version %>';
@@ -27,11 +27,11 @@
           versionStatusSpan.classList.add('text-gray-600', 'text-xs', 'pt-2');
         } else {
           const link = document.createElement('a');
-          link.href = 'https://github.com/heliactyloss/heliactyl/releases/tag/' + latestVersion;
+          link.href = 'https://github.com/craterXO/nexa-dash/releases/tag/' + latestVersion;
           link.classList.add('text-amber-500', 'transition', 'hover:text-amber-600', 'font-medium');
           link.textContent = 'here';
 
-          const linkText = document.createTextNode(`Heliactyl ${latestVersion} is ready to be updated to. Please click `);
+          const linkText = document.createTextNode(`NexaDash ${latestVersion} is ready to be updated to. Please click `);
           versionStatusSpan.appendChild(linkText);
           versionStatusSpan.appendChild(link);
           versionStatusSpan.appendChild(document.createTextNode(' to download it'));
@@ -95,15 +95,15 @@
             <% } %>
             <div class="lg:flex lg:items-center lg:justify-between p-8 border border-gray-200 rounded-3xl">
               <div class="min-w-0 flex-1 ml-4">
-                <h2 class="text-xl font-semibold text-gray-700 sm:truncate tracking-tight">Heliactyl version 14</h2>
+                <h2 class="text-xl font-semibold text-gray-700 sm:truncate tracking-tight">NexaDashboard</h2>
                 <p class="text-xs mt-2 font-thin text-gray-500 mb-2">
-                  This dashboard is running Heliactyl version <span class="bg-gray-200 px-2 py-1 mb-2 rounded-full" id="currentVersion"></span>
+                  This dashboard is running Nexa version <span class="bg-gray-200 px-2 py-1 mb-2 rounded-full" id="currentVersion"></span>
                 </p>
                 <span id="versionStatus"></span>
               </div>
               <div class="mt-5 flex lg:ml-4 lg:mt-0">
                 <span class="sm:ml-3 mr-3">
-                  <img src="https://atqr.pages.dev/v2Favicon.png" class="h-20 rounded-3xl bg-gray-200 p-3">
+                  <img src="" class="h-20 rounded-3xl bg-gray-200 p-3">
                 </span>
               </div>
             </div>

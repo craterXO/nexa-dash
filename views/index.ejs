@@ -1,53 +1,27 @@
-<html class="h-full">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title><%= settings.name %></title>
-  <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
-  <link rel="stylesheet" href="../assets/tailwind.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://unpkg.com/@popperjs/core@2.10.1/dist/umd/popper.min.js"></script>
-
-  <!-- Inter font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login <%= settings.name %></title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-custom {
+            background-image: url('https://media.discordapp.net/attachments/1288879109010882744/1290694321313681438/Microsoft_Surface_Wallpaper.jpeg?ex=66fd6442&is=66fc12c2&hm=0a368e7ea33beaf7867a14263ecb69b9c1b362d98f79a2693ab7ae485d9ed7f1&=&format=webp');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-
-<body class="h-full bg-gray-100 p-12" style="font-family: 'Inter'">
-  <div class="flex min-h-full">
-    <div class="flex flex-1 flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
-      <div class="mx-auto w-full max-w-sm lg:w-96">
-        <div>
-          <span class="text-gray-400 text-lg font-semibold tracking-tight mt-2 mb-2"><%= settings.name %></span>
-          <h2 class="mt-6 text-3xl font-semibold tracking-tight text-gray-600">Sign in to your account</h2>
-          <p class="mt-2 text-sm text-gray-500">
-            Welcome back! Sign in to continue.
-          </p>
-        </div>
-
-        <div class="mt-16">
-          <div>
-            <div class="relative mt-6">
-              <div class="absolute inset-0 flex items-center" aria-hidden="true">
-                <div class="w-full border-t border-gray-300"></div>
-              </div>
-              <div class="relative flex justify-center text-sm">
-                <span class="bg-gray-100 px-5 text-gray-500">Choose an OAuth2 provider</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-6">
-            <form action="#" method="POST" class="space-y-6">
-              <div>
-                <a href="../login" class="transition inline-flex items-center rounded-2xl bg-gray-200 px-8 py-3 text-sm font-medium text-gray-600 hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 w-full flex text-center justify-center">Sign in with Discord</a>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="relative hidden w-0 flex-1 lg:block">
-      <img class="absolute inset-0 h-full w-full object-cover rounded-3xl" src="../assets/loginBackground.png" alt="">
-    </div>
+<body class="bg-custom h-screen flex items-center justify-center">
+  <div class="bg-white bg-opacity-30 rounded-lg p-12 shadow-lg w-96">
+      <h1 class="text-2xl font-semibold text-center mb-6">Welcome Back!</h1>
+      <a href="../login" class="flex items-center justify-center bg-blue-600 text-white rounded-lg py-3 px-6 hover:bg-blue-700 transition duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+          <path fill="#FFFFFF" d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z"></path>
+      </svg>
+      → Login with Discord
+      </a>
   </div>
 </body>
+</html>
