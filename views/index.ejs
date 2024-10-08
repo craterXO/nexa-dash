@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login <%= settings.name %></title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | <%= settings.name %></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <style>
-        .bg-custom {
-            background-image: url('https://media.discordapp.net/attachments/1288879109010882744/1290694321313681438/Microsoft_Surface_Wallpaper.jpeg?ex=66fd6442&is=66fc12c2&hm=0a368e7ea33beaf7867a14263ecb69b9c1b362d98f79a2693ab7ae485d9ed7f1&=&format=webp');
-            background-size: cover;
-            background-position: center;
-        }
+      .bg-custom {
+        background-image: url("https://i.pinimg.com/564x/d9/0d/4a/d90d4ac3608bc7a4c9809bc8dc991c83.jpg");
+        background-size: cover;
+        background-position: center;
+      }
     </style>
-</head>
-<body class="bg-custom h-screen flex items-center justify-center">
-  <div class="bg-white bg-opacity-30 rounded-lg p-12 shadow-lg w-96">
-      <h1 class="text-2xl font-semibold text-center mb-6">Welcome Back!</h1>
-      <a href="../login" class="flex items-center justify-center bg-blue-600 text-white rounded-lg py-3 px-6 hover:bg-blue-700 transition duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
-          <path fill="#FFFFFF" d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z"></path>
-      </svg>
-      → Login with Discord
+  </head>
+  <body class="bg-custom h-screen flex items-center justify-center">
+    <div
+      class="bg-white bg-opacity-70 p-10 rounded-lg shadow-lg w-full max-w-md flex flex-col items-start"
+    >
+      <h2 class="text-3xl font-bold">NexaDash</h2>
+      <h2 class="text-2xl font-semibold mb-0 mt-6">Welcome Back!</h2>
+      <h2 class="text-base font-semibold mt-3 mb-3"> please select an Oauth2 provider</h2>
+      <a
+        href="../login"
+        class="flex items-center justify-center bg-blue-600 text-white font-medium rounded-lg py-3 px-6 hover:bg-blue-700 transition duration-300 w-full"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 48 48"
+          class="mr-2"
+        >
+          <path
+            fill="#FFFFFF"
+            d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z"
+          ></path>
+        </svg>
+        Login with Discord
       </a>
-  </div>
-</body>
+    </div>
+    <div class="bg-opacity-30 fixed bottom-0 left-0 bg-gray-800 text-white text-center py-2 rounded-t-lg rounded-l-lg rounded-b-lg w-[200px] ml-1 mb-1 p-2">
+      NexaDash Version 1.0.0
+    </div>      
+  </body>
 </html>
+
